@@ -11,10 +11,22 @@ body {
 }
 
 /* fix bs3 horizontal scrollbar bug */
-.row { margin: 0; padding: 0 }
+.row { margin: 0; padding: 0; }
 
 h1 {
   font-size:45px; 
+}
+
+h4 {
+  font-size: 30px;
+}
+
+a{
+  color: white;
+}
+
+a:hover {
+  color: red;
 }
 
 img.grayscale {
@@ -64,12 +76,12 @@ img.grayscale {
 }
 
 .navbar-bold {
-  background-color:#11cc45;
+  background-color:#CC0000;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color:#22dd56;
+  background-color: #7fbbda;
 }
 
 .vert {
@@ -95,7 +107,7 @@ img.grayscale {
 
 .header {
   height: 80%;
-  background: #11cc45 url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
+  background: #CC0000 url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
 }
 
 .blurb {
@@ -113,7 +125,7 @@ img.grayscale {
 }
 
 .featurette {
-  background: #545455;
+  background: #7fbbda;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -139,11 +151,12 @@ img.grayscale {
 }
 
 .callout {
-  color: #ffffff;
-  padding-top:7%;
+  color: black;
+  font-weight: bold;
+  padding-top:3%;
   height: 100%;
   width: 100%;
-  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: url('images/havana.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
