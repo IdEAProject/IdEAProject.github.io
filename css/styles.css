@@ -55,16 +55,17 @@ img.grayscale {
 }
 
 .header .btn-lg {
+  margin-left: 40px;
    font-size:28px;
    border-color:#eeeeee;
    padding:15px;
-   background-color:transparent;
-   color:#ffffff;
+   background-color: #eeeeee;
+   color:#000000;
 }
 
 .header .btn-lg:hover {
    background-color:#eeeeee;
-   color:#777777;
+   color:#7fbbda;
 }
 
 .navbar a {
@@ -76,12 +77,12 @@ img.grayscale {
 }
 
 .navbar-bold {
-  background-color:#CC0000;
+  background-color:#7fbbda;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color: #7fbbda;
+  background-color: #CC0000;
 }
 
 .vert {
@@ -95,19 +96,25 @@ img.grayscale {
   -webkit-text-stroke: 1px rgba(0,0,0,0.1);
   color:#431a6d;
   color:#fff;
-  margin-left:-5px;
+  margin-left: 130px;
   margin-bottom:5px;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .header .lead {
-  color:#eeeeee;
+  margin-right: 338px;
+  margin-left: 130px;
+  font-weight: bold;
   font-size:25px;
+  border-color:#eeeeee;
+  padding:15px;
+  background-color: #eeeeee;
+  color:#000000;
 }
 
 .header {
   height: 80%;
-  background: #CC0000 url('http://www.bootply.com/assets/example/pt_squares_lg.png') repeat center center fixed;
+  background: #CC0000 url('images/cuban-capital.jpg') no-repeat center center fixed;
 }
 
 .blurb {
@@ -161,6 +168,14 @@ img.grayscale {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.callout#stanford_background {
+  background: url('images/stanford-sky.jpg') no-repeat center center fixed; 
+}
+
+.callout#sec4 {
+  display:none;
 }
 
 .gallery {
