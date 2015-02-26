@@ -114,7 +114,8 @@ img.grayscale {
 
 .header {
   height: 80%;
-  background: #CC0000 url('images/cuban-capital.jpg') no-repeat center center fixed;
+  background: #FFFFFF url('images/cuban-capital.jpg') no-repeat center fixed;
+  background-size:100%;
 }
 
 .blurb {
