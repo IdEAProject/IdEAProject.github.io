@@ -82,7 +82,7 @@ img.grayscale {
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color: #A0A0A0;
+  background-color: #D3D3D3;
 }
 
 .vert {
@@ -171,13 +171,13 @@ img.grayscale {
   background-size: cover;
 }
 
-.callout#stanford_background {
+.callout#sec4{
   background: url('images/stanford-sky.jpg') no-repeat center center fixed; 
 }
 
-.callout#sec4 {
+/*.callout#sec4 {
   display:none;
-}
+}*/
 
 .gallery {
   padding: 50px 0;
