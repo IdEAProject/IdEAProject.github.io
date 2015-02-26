@@ -51,7 +51,7 @@ img.grayscale {
 }
 
 .scroll-top {
-  background-color:#33ee67;
+  background-color:#7fbbda;
 }
 
 .header .btn-lg {
@@ -73,11 +73,11 @@ img.grayscale {
 }
 
 .navbar-bold.affix {
-  background-color:#33ee67;
+  background-color:#7fbbda;
 }
 
 .navbar-bold {
-  background-color:#7fbbda;
+  background-color:#7fbbda; /*scroll bar color*/
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
