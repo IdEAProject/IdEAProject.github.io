@@ -91,7 +91,7 @@ img:hover{
 }
 
 .scroll-top {
-  background-color:rgba(240, 240, 240, 0.95);
+  background-color:#7fbbda;
 }
 
 #title {
@@ -109,7 +109,7 @@ img:hover{
 
 .header .btn-lg:hover {
    background-color:#eeeeee;
-   color:rgba(240, 240, 240, 0.95);
+   color:#7fbbda;
 
 }
 
@@ -129,7 +129,7 @@ img:hover{
 }
 
 .navbar-bold.affix {
-  background-color:rgba(240, 240, 240, 0.95);
+  background-color:#7fbbda;
 }
 
 .navbar-bold {
@@ -191,7 +191,7 @@ img:hover{
 }
 
 .bright {
-  background: rgba(240, 240, 240, 0.95) url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  background: #7fbbda url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
   color:#fff;
 }
 
