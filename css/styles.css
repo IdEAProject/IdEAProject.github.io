@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family:'Merriweather','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 /* fix bs3 horizontal scrollbar bug */
@@ -15,10 +15,36 @@ body {
 
 h1 {
   font-size:45px; 
+  color:#be2000;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin-bottom:50px;
+  font-weight:bold;
+}
+
+h2 {
+  font-size:45px; 
+  color:white;
+  font-weight:bold;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 h4 {
-  font-size: 30px;
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight:bold;
+  color:white;
+}
+
+#title{
+  margin-left:130px;
+  font-size:120px;
+  margin-bottom:0px;
+}
+
+.picSection{
+  padding:25px;
+  margin-bottom:50px;
+  border-radius:4px;
+  background-color: rgba(255,255,255,0.6);
 }
 
 a{
@@ -27,13 +53,27 @@ a{
 
 a:hover {
   color: red;
+  font-family:'Merriweather','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+
 }
 
 img.grayscale {
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    opacity: 0.5;
+    padding-top:50px;
+    padding-bottom:50px;
 }
+
+img:hover{
+    opacity: 1;
+    filter: none;
+    filter: none; /* IE6-9 */
+    -webkit-filter: none;
+
+}
+
 
 .icon-bar {
    background-color:#fff;
@@ -54,10 +94,14 @@ img.grayscale {
   background-color:#7fbbda;
 }
 
+#title {
+  color:#be2000;
+  margin-top:100px;
+}
+
 .header .btn-lg {
   margin-left: 40px;
    font-size:28px;
-   border-color:#eeeeee;
    padding:15px;
    background-color: #eeeeee;
    color:#000000;
@@ -66,10 +110,22 @@ img.grayscale {
 .header .btn-lg:hover {
    background-color:#eeeeee;
    color:#7fbbda;
+
 }
 
+
+#navbar{
+  color:#002086;
+}
+
+#navbar-wrapper{
+  background-color:#002086;
+}
+
+
 .navbar a {
-  color:#fff;
+  color:#be2000;
+  font-weight:500;
 }
 
 .navbar-bold.affix {
@@ -77,12 +133,15 @@ img.grayscale {
 }
 
 .navbar-bold {
-  background-color:#7fbbda; /*scroll bar color*/
+  background-color:rgba(240, 240, 240, 0.95);
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color: #D3D3D3;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #002086;
+  background-color:rgba(240, 240, 240, 0);
+
 }
 
 .vert {
@@ -91,35 +150,39 @@ img.grayscale {
   padding-top:4%;
 }
 
-.header h1 {
-  font-size:110px;
+.header-content h1 {
+
+  position:absolute;
+  font-size:150px;
   -webkit-text-stroke: 1px rgba(0,0,0,0.1);
-  color:#431a6d;
-  color:#fff;
+  color:black;
   margin-left: 130px;
   margin-bottom:5px;
-  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family:'Merriweather','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .header .lead {
-  margin-right: 338px;
   margin-left: 130px;
+  margin-right:455px;
+  border-radius:4px;
   font-weight: bold;
   font-size:25px;
-  border-color:#eeeeee;
   padding:15px;
-  background-color: #eeeeee;
-  color:#000000;
+  background-color: rgba(255,255,255,0.8);
+  color:#be2000;
 }
 
+
 .header {
+
   height: 80%;
   background: #FFFFFF url('images/cuban-capital.jpg') no-repeat center fixed;
   background-size:100%;
 }
 
 .blurb {
-  padding: 120px 0;
+
+  padding: 100px 0;
   background-color:#fefefe;
 }
 
@@ -133,9 +196,9 @@ img.grayscale {
 }
 
 .featurette {
-  background: #7fbbda;
+  background: white;
   padding: 50px 0;
-  color: #ffffff;
+  color: #be2000;
 }
 
 .featurette-item {
@@ -154,14 +217,11 @@ img.grayscale {
   text-align: center;
 }
 
-.featurette-item > i:hover {
-  font-size: 68px;
-}
 
 .callout {
   color: black;
   font-weight: bold;
-  padding-top:3%;
+  
   height: 100%;
   width: 100%;
   background: url('images/havana.jpg') no-repeat center center fixed; 
@@ -171,29 +231,58 @@ img.grayscale {
   background-size: cover;
 }
 
-.callout#sec4{
+#contact{
+  padding-bottom:30px;
+
+}
+
+.callout#stanford_background {
   background: url('images/stanford-sky.jpg') no-repeat center center fixed; 
 }
 
-/*.callout#sec4 {
-  display:none;
-}*/
+.callout#teamMembers {
+/*  display:none;
+*/}
 
 .gallery {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .call-to-action {
   background: #eeeeee;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
-.call-to-action .btn {
+.img-cirlce{
+  margin-bottom:30px;
+}
+
+.call-to-action {
   margin: 10px;
 }
 
+#teamBlurb{
+  padding-top:75px;
+}
+
+
 footer {
   padding: 100px 0;
+}
+
+
+img {
+  opacity: .5;
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+/* Disable grayscale on hover */
+img:hover {
+  opacity:1;
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
